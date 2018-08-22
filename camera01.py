@@ -1,6 +1,11 @@
 import cv2
 import numpy
 
+#ตรวจจับหน้า
+def face():
+	print "Write Code Here ...."
+	#write code
+
 #เปิดการทำงานกล้อง
 cap = cv2.VideoCapture(0)
 
@@ -14,6 +19,10 @@ while True :
 while True :
 	ret,img=cap.read()
 	cv2.imshow('video output',img)
+	
+	#call function ตรวจจับหน้า
+	face()
+	
 	k = cv2.waitKey(1)
 	#ะสั่งหยุดต่อเมื่อ กดตัว S 
 	if k==ord('s'):
@@ -22,3 +31,7 @@ while True :
 cap.release()
 #ปิดหน้าต่าง
 cv2.destroyAllwindown()
+
+
+
+ 
